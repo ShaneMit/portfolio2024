@@ -17,12 +17,43 @@ nav li { border-bottom: 1px solid black;
          width: 100%;
 }
 
-footer { background-color: rgb(187, 187, 187);
-         font-size: .60em;
-		 font-style: italic;
-		 text-align: center;
-		 padding-bottom: 1em;
-		 border-top: 2px solid rgb(50, 50, 50);
+figure {
+	width:355px;
+	background-color: #4B4F7D;
+	align-content: center;
+	text-align: center;
+	padding: 30px;
+	border-radius: 30px;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	-ms-border-radius: 30px;
+	-o-border-radius: 30px;
+	float: right;
+}
+
+figure img {
+	width: 325px;
+	height: 500px;
+	border-radius: 15px;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	-ms-border-radius: 15px;
+	-o-border-radius: 15px;
+}
+
+figcaption {
+	padding-top: 10px;
+	color: #f3f3f6;
+}
+
+footer { background-color: rgb(216, 216, 216);
+         font-size: .75em;
+		 		 font-style: italic;
+		     text-align: center;
+				 padding-top: 1em;
+		     padding-bottom: 1em;
+		     border-top: 2px solid rgb(50, 50, 50);
+  			 width: 100%;
 }
 
 .hobby img {
