@@ -1,6 +1,22 @@
+header {
+	background-color: #383A68;
+	max-height: 190px;
+}
+
+header a {
+	color: #F3F3F6;
+}
+
+header a:hover {
+	color: #f2c45c;
+	font-style: italic;
+}
+
 body {
 	font-family: Arial, Helvetica, sans-serif;
-	background-color: #FFFFFF;
+	/* background-color: #FFFFFF; */
+	/* background-color: #E6E0D6; */
+	background-color: #F3F3F6;
   margin: 0;
   font-size: 1.2em;
   color: #000000;
@@ -13,24 +29,27 @@ main {
   padding-right: 65px;
 }
 
-nav { text-align: center;
-	    font-size: 1em;
+nav { 
+	text-align: center;
+	font-size: 1em;
+}
+
+nav ul { 
+	display: flex;
+  flex-direction: column;
+	font-size: 1.25em;
+	list-style-type: none;
+	margin: 0;
+  padding: 0;
+}
+
+nav li { 
+	border-bottom: 1px solid black;
+  padding: .5em 1em;
+  width: 100%;
 }
 
 a { text-decoration: none; }
-
-nav ul { display: flex;
-         flex-direction: column;
-	       font-size: 1.25em;
-	       list-style-type: none;
-	       margin: 0;
-         padding: 0;
-}
-
-nav li { border-bottom: 1px solid black;
-         padding: .5em 1em;
-         width: 100%;
-}
 
 figure {
 	width:345px;
@@ -43,12 +62,13 @@ figure {
 	-moz-border-radius: 30px;
 	-ms-border-radius: 30px;
 	-o-border-radius: 30px;
-	float: right;
+	/* float: right; */
 }
 
 figure img {
 	width: 325px;
 	height: 500px;
+	border: 3px solid black;
 	border-radius: 15px;
 	-webkit-border-radius: 15px;
 	-moz-border-radius: 15px;
@@ -58,33 +78,46 @@ figure img {
 
 figcaption {
 	padding-top: 10px;
-	color: #f3f3f6;
+	color: #E6E0D6;
 }
 
-footer { background-color: rgb(216, 216, 216);
-         font-size: .75em;
-		 		 font-style: italic;
-		     text-align: center;
-				 padding-top: 1em;
-		     padding-bottom: 1em;
-		     border-top: 2px solid rgb(50, 50, 50);
-  			 width: 100%;
+footer { 
+	background-color: rgb(216, 216, 216);
+  font-size: .75em;
+	font-style: italic;
+	text-align: center;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	border-top: 2px solid rgb(50, 50, 50);
+  width: 100%;
+}
+
+#flow {
+	display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
 
 .hobby {
 	background-color: #4B4F7D;
-	color: #f3f3f6;
+	color: #E6E0D6;
 	text-align: center;
 	border-radius: 30px;
 	-webkit-border-radius: 30px;
 	-moz-border-radius: 30px;
 	-ms-border-radius: 30px;
 	-o-border-radius: 30px;
+  padding: 15px;
+  margin: 15px;
+  box-shadow: 0px 3px 15px rgba(0,0,0,1);
+  width: 280px;
+  /* height: 500px; */
 }
 
 .hobby img {
 	width: 250px;
 	height: 250px;
+	border: 3px solid #000000;
 	border-radius: 15px;
 	-webkit-border-radius: 15px;
 	-moz-border-radius: 15px;
@@ -92,10 +125,14 @@ footer { background-color: rgb(216, 216, 216);
 	-o-border-radius: 15px;
 }
 
-.item {
-	background-color: #4B4F7D;
-	color: #f3f3f6;
-	text-align: center;
+.hobby p {
+	font-size: .80em;
+}
+
+button {
+	color: #2a2a2a;
+	font-weight: bold;
+	border: 1px solid black;
 	border-radius: 30px;
 	-webkit-border-radius: 30px;
 	-moz-border-radius: 30px;
@@ -103,9 +140,31 @@ footer { background-color: rgb(216, 216, 216);
 	-o-border-radius: 30px;
 }
 
+button:hover {
+	background-color: #2a2a2a;
+	color: #F3F3F6;
+	font-style: italic;
+}
+
+.item {
+	background-color: #4B4F7D;
+	color: #E6E0D6;
+	text-align: center;
+	border-radius: 30px;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	-ms-border-radius: 30px;
+	-o-border-radius: 30px;
+	padding: 15px;
+  margin: 15px;
+  box-shadow: 0px 3px 15px rgba(0,0,0,1);
+	width: 500px;
+}
+
 .item img {
 	width: 426px;
 	height: 240px;
+	border: 3px solid #000000;
 	border-radius: 15px;
 	-webkit-border-radius: 15px;
 	-moz-border-radius: 15px;
