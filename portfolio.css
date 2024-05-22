@@ -22,16 +22,46 @@ body {
   color: #000000;
 }
 
+h1 {
+	margin: 0;
+	padding-left: 35px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+h2 {
+	color: #383A68;
+}
+
+h3 {
+	color: #4c4c4c;
+}
+
+
 main {
   display: block;
   margin: 0;
   padding-left: 65px;
   padding-right: 65px;
+	padding-top: 30px;
+	padding-bottom: 30px;
 }
 
 nav { 
+	background-color: #4B4F7D;
 	text-align: center;
 	font-size: 1em;
+	border-top: 3px solid #2a2a2a;
+	border-bottom: 3px solid #2a2a2a;
+}
+
+nav a {
+	color: #F3F3F6;
+}
+
+nav a:hover {
+	color:#f2c45c;
+	font-style: italic;
 }
 
 nav ul { 
@@ -44,7 +74,7 @@ nav ul {
 }
 
 nav li { 
-	border-bottom: 1px solid black;
+	/* border-bottom: 1px solid black; */
   padding: .5em 1em;
   width: 100%;
 }
@@ -57,12 +87,12 @@ figure {
 	align-content: center;
 	text-align: center;
 	padding: 25px;
+	border: 3px solid black;
 	border-radius: 30px;
 	-webkit-border-radius: 30px;
 	-moz-border-radius: 30px;
 	-ms-border-radius: 30px;
 	-o-border-radius: 30px;
-	/* float: right; */
 }
 
 figure img {
@@ -79,7 +109,37 @@ figure img {
 figcaption {
 	padding-top: 10px;
 	color: #E6E0D6;
+	font-weight: bold;
 }
+
+table { 
+	/* margin-top: 10px;
+	margin-bottom: 10px;
+	/* margin-left: 65px;
+	margin-right: 65px; */
+	margin: auto;
+  /* border: 2px solid #2a2a2a; */
+  width: 75%;
+  padding: 5px;
+  border-spacing: 0; 
+}
+
+th {
+	color: #F3F3F6;
+}
+
+td {
+	color: #2a2a2a;
+}
+
+td, th { 
+	padding: 0.5em;
+  border-style: none;
+}
+
+tr:first-of-type { background-color: #4B4F7D; }
+
+tr:nth-of-type(even) { background-color: #EAEAEA; }
 
 footer { 
 	background-color: rgb(216, 216, 216);
@@ -92,16 +152,31 @@ footer {
   width: 100%;
 }
 
+#everyone {
+	font-weight: bold;
+}
+
 #flow {
 	display: flex;
   flex-wrap: wrap;
   flex-direction: row;
 }
 
+#gallery {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+
+#academic {
+	text-align: center;
+}
+
 .hobby {
 	background-color: #4B4F7D;
 	color: #E6E0D6;
 	text-align: center;
+	border: 3px solid black;
 	border-radius: 30px;
 	-webkit-border-radius: 30px;
 	-moz-border-radius: 30px;
@@ -123,6 +198,10 @@ footer {
 	-moz-border-radius: 15px;
 	-ms-border-radius: 15px;
 	-o-border-radius: 15px;
+}
+
+.hobby h3 {
+	color: #E6E0D6;
 }
 
 .hobby p {
@@ -150,6 +229,7 @@ button:hover {
 	background-color: #4B4F7D;
 	color: #E6E0D6;
 	text-align: center;
+	border: 3px solid black;
 	border-radius: 30px;
 	-webkit-border-radius: 30px;
 	-moz-border-radius: 30px;
@@ -172,6 +252,9 @@ button:hover {
 	-o-border-radius: 15px;
 }
 
+.item h3 {
+	color: #E6E0D6;
+}
 @media (min-width: 600px) {
 	nav ul {
       display: flex;
